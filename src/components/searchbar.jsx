@@ -26,7 +26,7 @@ const SearchBar = () => {
     }
 
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&libraries=places&callback=initMap`;
+    script.src = process.env.MAP_URL;
     script.async = true;
     script.onload = () => {
       autocompleteServiceRef.current = new window.google.maps.places.AutocompleteService();
