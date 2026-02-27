@@ -1,0 +1,66 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #f7f6f3;
+  --bg2:       #eeece8;
+  --surface:   #ffffff;
+  --border:    #e2dfd8;
+  --border2:   #ccc9c0;
+  --text:      #1a1814;
+  --muted:     #7a7670;
+  --accent:    #2a7cc8;
+  --accent-h:  #b03f1e;
+  --accent-lt: #fdf0ec;
+  --green:     #2a7a4b;
+  --green-lt:  #ebf5ef;
+  --red:       #c0392b;
+  --red-lt:    #fdecea;
+  --yellow:    #b07d10;
+  --yellow-lt: #fef8e7;
+  --blue:      #1d5fa8;
+  --blue-lt:   #e8f0fa;
+  --sidebar-w: 260px;
+  --radius:    10px;
+  --shadow:    0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.05);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+html { font-size: 15px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: inherit; }
+img { max-width: 100%; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+/* Animations */
+@keyframes fadeUp   { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+@keyframes fadeIn   { from { opacity:0; } to { opacity:1; } }
+@keyframes spin     { to { transform: rotate(360deg); } }
+@keyframes shimmer  { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+@keyframes slideIn  { from { transform:translateX(-10px); opacity:0; } to { transform:none; opacity:1; } }
+
+.fade-up  { animation: fadeUp  .35s ease both; }
+.fade-in  { animation: fadeIn  .25s ease both; }
+
+/* Utility */
+.truncate { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
