@@ -26,7 +26,7 @@ const SearchBar = () => {
     }
 
     const script = document.createElement('script');
-    script.src = process.env.MAP_URL;
+    script.src = import.meta.env.MAP_URL;
     script.async = true;
     script.onload = () => {
       autocompleteServiceRef.current = new window.google.maps.places.AutocompleteService();

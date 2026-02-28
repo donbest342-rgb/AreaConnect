@@ -35,7 +35,7 @@ const ServiceDirectory = () => {
   useEffect(() => {
   const fetchProviders = async () => {
     try {
-      const response = await api.get("/providers/public"); // Adjust endpoint as needed
+      const response = await api.get("/providers/public/"); // Adjust endpoint as needed
       console.log(response.data.data);
 
       // Adjust based on your backend response structure

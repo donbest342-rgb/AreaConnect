@@ -1,6 +1,11 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: '/api/v1', timeout: '15000' })
+
+// create a preconfigured axios instance using a Vite environment variable
+const api = axios.create({
+  baseURL: import.meta.env.VITE_BASE_URL || 'http://localhost:5000',
+  timeout: 15000,
+})
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('accessToken')
