@@ -4,7 +4,7 @@ import { useAuth } from '../../context/AuthContext'
 import { Input, Btn } from '../../components/UI'
 import { Mail, Lock, Zap } from 'lucide-react'
 import toast from 'react-hot-toast'
-import logo from '../../Assets/logoA.png'
+import logo from '../../assets/logo.png'
 
 export default function Login() {
   const { loginProvider, loginAdmin, loading } = useAuth()

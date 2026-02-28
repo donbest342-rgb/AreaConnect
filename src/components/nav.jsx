@@ -5,7 +5,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useNavigate } from 'react-router-dom';
-import logo from '../Assets/craiyon_171621_image.png';
+import logo from '../assets/craiyon_171621_image.png';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);

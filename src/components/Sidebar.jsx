@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { LogOut, Zap } from 'lucide-react'
 import toast from 'react-hot-toast'
-import logo from '../Assets/logoA.png'
+import logo from '../assets/logo.png'
 
 export default function Sidebar({ links, accentColor = 'var(--accent)' }) {
   const { user, logout } = useAuth()

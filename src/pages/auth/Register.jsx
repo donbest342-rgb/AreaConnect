@@ -4,7 +4,7 @@ import { useAuth } from '../../context/AuthContext'
 import { Input, Textarea, Select, Btn } from '../../components/UI'
 import { User, Mail, Phone, Lock, Briefcase, MapPin, Home, Zap } from 'lucide-react'
 import toast from 'react-hot-toast'
-import logo from '../../Assets/logoA.png'
+import logo from '../../assets/logo.png'
 
 const STEPS = ['Account', 'Location', 'Profile']
 

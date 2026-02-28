@@ -18,7 +18,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { useNavigate } from 'react-router-dom';
-import logo from '../Assets/logoA.png';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
   const Navigate = useNavigate();
